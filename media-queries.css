@@ -1,0 +1,11 @@
+
+@media screen and (max-width: 720px){
+    #foto3{
+        display: none;
+    }
+
+    .foto-espaço{
+        width: 45%;
+    }
+}
+
