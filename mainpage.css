@@ -7,6 +7,11 @@
     font-family: sans-serif;
 }
 
+:root{
+    --fonte-forte: 'Passion One';
+    --fonte-rua: 'Bangers';
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -32,14 +37,20 @@ html {
 }
 
 #back1 > div > span{
-    width: 65vw;
-    font-size: 8rem;
+    max-width: 70%;
+    width: fit-content;
+    font-size: 6rem;
     display: block;
     color: rgb(255, 255, 255);
     text-align: center;
-    font-style: italic;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: var(--fonte-forte), sans-serif;
     text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.822);
+}
+
+#back1 > div > span > strong{
+    text-align: center;
+    font-size: 4em;
+    font-family: var(--fonte-forte);
 }
 
 .linkmenu{
@@ -87,7 +98,7 @@ html {
     color: white;
     text-decoration: none;
     font-size: 5rem;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: var(--fonte-rua), sans-serif;
     text-shadow: 3px 3px 10px black;
 }
 
@@ -113,7 +124,7 @@ html {
 }
 
 .nome-painel{
-    font-family:'Impact', sans-serif;
+    font-family: var(--fonte-rua), sans-serif;
     font-size: 7rem;
     font-weight: lighter;
     text-align: center;
@@ -173,7 +184,7 @@ html {
 .foto-espaço{
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.550);
     border-radius: 10px;
-    width: 31%;
+    width: 23%;
     height: 100%;
     background-position: center center;
     background-size: cover;
@@ -182,14 +193,17 @@ html {
 
 #foto1:hover{
     animation-play-state: paused;
+    animation-timing-function: steps(1);
 }
 
 #foto2:hover{
     animation-play-state: paused;
+    animation-timing-function: steps(1);
 }
 
 #foto3:hover{
     animation-play-state: paused;
+    animation-timing-function: steps(1);
 }
 
 #foto1{
@@ -287,8 +301,8 @@ html {
 }
 
 
-#basquete > span{
-    font-family:'Impact', sans-serif;
+.nome-painel2{
+    font-family:var(--fonte-rua), sans-serif;
     font-size: 7rem;
     font-weight: lighter;
     color: white;
