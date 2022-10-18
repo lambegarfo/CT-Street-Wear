@@ -29,6 +29,7 @@ html {
 
 #back1 > div{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100%;
@@ -50,7 +51,60 @@ html {
 #back1 > div > span > strong{
     text-align: center;
     font-size: 4em;
-    font-family: var(--fonte-forte);
+    font-family: var(--fonte-forte), sans-serif;
+}
+
+#back1 button{
+    display: block;
+    font-size: 1.7rem;
+    font-family: var(--fonte-forte), sans-serif;
+    height: 3rem;
+    width: 14rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.950);
+}
+
+
+#back1 button:hover{
+    color: white;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: none;
+}
+
+#back1 button::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0px;
+    background-color: white;
+    opacity: 0;
+    transition: all 2s ease-in 0s;
+    -webkit-transition: all 2s ease-in 0s;
+    z-index: 1;
+}
+
+#back1 button:hover::after{
+    width: 100%;
+}
+
+@keyframes fill-it {
+    from{
+        opacity: .1;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+#back1 button:active{
+    color: black;
+    background-color: white;
+    transform: translate(1px, 1px);
 }
 
 .linkmenu{
@@ -281,18 +335,6 @@ html {
     backdrop-filter: blur(45%);
 }
 
-
-@keyframes flutuar {
-    0%{
-        top: 55px;
-        transform: scale(90%);
-    }
-
-    100%{
-        top: 20px;
-        transform: scale(100%);
-    }
-}
 
 #basquete{
     background: radial-gradient(#0073c0 40%, #032b68 99%);
