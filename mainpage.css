@@ -308,7 +308,7 @@ html {
 }
 
 .foto-espaço > a{
-    min-width: max-content;
+    min-width: 100px;
     width: 50%;
     position: relative;
     top: 85%;
@@ -318,6 +318,7 @@ html {
     border: solid 2px black;
     border-radius: 5px;
     padding: 2px;
+    color: black;
 }
 
 .legenda{
