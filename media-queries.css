@@ -1,21 +1,94 @@
 
-@media screen and (max-width: 720px){
-    #foto2{
+@media screen and (max-width: 620px) {
+    #logo{
+        font-size: 4rem;
+    }
+
+    .linkmenu{
+        font-size: 1.5rem;
+    }
+
+    #back1 > div > span{
+        font-size: 4rem;
+    }
+
+    #fire{
+        font-size: 10rem;
+    }
+
+    .nome-painel2, .nome-painel{
+        font-size: 6rem;
+    }
+
+    
+
+    #foto1:first-child{
         display: none;
     }
 
     .foto-espaço{
-        width: 45% !important;
+        width: 30%;
+    }
+
+    .legenda{
+        font-size: 2.5rem;
     }
 }
 
+@media screen and (max-width: 430px) {
+    #logo{
+        font-size: 2.5rem;
+    }
 
-@media screen and (max-width: 1024px){
-    #foto3{
-        display: none;
+    .linkmenu{
+        font-size: 1.2rem;
+        padding: 3px;
+    }
+
+    #back1 > div > span{
+        font-size: 3rem;
+    }
+
+    .nome-painel2, .nome-painel{
+        font-size: 4rem;
+    }
+
+    .button1{
+        height: 2rem;
+        width: 10rem;
+        font-size: 1.3rem;
     }
 
     .foto-espaço{
-        width: 31%;
+        width: 45%;
+        height: 400px;
+    }
+
+    .legenda{
+        font-size: 1.8rem;
+    }
+
+    #foto1{
+        display: none;
+    }
+
+    #basquete{
+        flex-direction: column;
+    }
+
+    .left-painel{
+        width: 90%;
+    }
+
+    .desc-jersey{
+        font-size: 1rem;
+    }
+
+    .jersey{
+        width: 70%;
     }
 }
+
+
+
+

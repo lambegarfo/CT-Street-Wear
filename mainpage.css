@@ -16,6 +16,9 @@ html {
     scroll-behavior: smooth;
 }
 
+body{
+    width: 100%;
+}
 
 #back1{
     width: 100%;
@@ -39,6 +42,7 @@ html {
 }
 
 #back1 > div > span{
+    white-space: nowrap;
     max-width: 70%;
     width: fit-content;
     font-size: 6rem;
@@ -49,9 +53,10 @@ html {
     text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.822);
 }
 
-#back1 > div > span > strong{
+#fire{
+    color: white;
     display: block;
-    font-size: 4em;
+    font-size: 15rem;
     text-align: center;
     font-family: var(--fonte-forte), sans-serif;
 }
@@ -126,9 +131,11 @@ html {
     text-decoration: none;
     text-shadow: 1px 1px 3px black;
     border-radius: 5px;
+    margin: 5px;
     padding: 7px;
     font-weight: lighter;
-    font-size: 1.8em;
+    width: max-content;
+    font-size: 2rem;
     font-family: var(--fonte-forte), sans-serif;
 }
 
@@ -137,8 +144,8 @@ html {
     text-shadow: none;
     color: black;
     position: relative;
-    bottom: 2px;
-    left: 2px;
+    bottom: 1px;
+    left: 1px;
 }
 
 #menu{
@@ -160,11 +167,11 @@ html {
 }
 
 #logo{
+    white-space: nowrap;
     display: block;
     color: white;
     text-decoration: none;
-    max-width: 70%;
-    font-size: 5rem;
+    font-size: 6rem;
     font-family: var(--fonte-rua), sans-serif;
     text-shadow: 3px 3px 10px black;
 }
