@@ -181,6 +181,7 @@ body{
 }
 
 .painel{
+    padding: 10px 5px;
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -202,7 +203,7 @@ body{
 }
 
 .nome-painel{
-    padding: 8px 5px;
+    margin: 5px 5px;
     font-family: var(--fonte-rua), sans-serif;
     font-size: 7rem;
     font-weight: lighter;
@@ -339,6 +340,7 @@ body{
 }
 
 
+
 #basquete{
     background: radial-gradient(rgb(142, 76, 172),rgb(78, 3, 177));
     display: flex;
@@ -378,18 +380,29 @@ body{
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
 }
 
-.left-painel > button{
+.price{
+    font-size: 9rem;
+    color: white;
+    text-shadow: 1px 1px 12px rgba(22, 0, 26, 0.884);
+}
+
+.left-painel > .button1{
     background-color: gold;
 }
 
-.left-painel > button:hover::before{
+.left-painel > .button1:hover{
+    background-color: transparent;
+}
+
+.left-painel > .button1:hover::before{
     background-color: gold;
 }
 
-.left-painel > button:hover::after{
+.left-painel > .button1:hover::after{
     background-color: gold;
 }
 
 .jersey{
     width: 40%;
+    filter: drop-shadow(0 0 10px rgba(69, 0, 71, 0.877));
 }
