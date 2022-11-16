@@ -1,0 +1,15 @@
+{
+    "fotosGiovana":{
+        "foto1":"Imagens/Giovana1.jpeg",
+        "foto2":"Imagens/Giovana2.jpeg",
+        "foto3":"Imagens/Giovana3.jpeg",
+        "foto4":"Imagens/Giovana4.jpeg",
+        "foto5":"Imagens/Giovana5.jpeg"
+    },
+    "fotosFlavin":{
+        "foto1":"Imagens/Flavin1.jpeg",
+        "foto2":"Imagens/Flavin2.jpeg",
+        "foto3":"Imagens/Flavin3.jpeg",
+        "foto4":"Imagens/Flavin4.jpeg"
+    }
+}
