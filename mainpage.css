@@ -19,28 +19,120 @@ html {
     display: flex;
     flex-direction: column;
     min-height: 100%;
+    font-size: 100%;
+    border: none;
 }
 
 body{
     display: flex;
     flex-direction: column;
     flex: 1;
+    border: none;
 }
 
 header {
-    flex: 1;
+    background-color: white;
+    min-height: 600px;
+    height: max-content;
+    border: none;
 }
+
+#topoHeader {
+    width: 100%;
+    font-size: 3.5vw;
+    white-space: nowrap;
+    font-family: var(--fonte-forte), sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+#head {
+    width: 100%;
+    aspect-ratio: 16/11;
+    background-image: url(Imagens/dom-hill-0wMLZNbE8Ac-unsplash.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+#head > span {
+    font-family: var(--fonte-rua), sans-serif;
+    font-size: 14vw;
+    color: white;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.725);
+    border: none;
+}
+
+.navbar{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: max-content;
+    background-color: black;
+}
+
+.link {
+    flex: 1;
+    text-align: center;
+    height: 100%;
+    padding: 1rem 2.5rem;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    font-family: 'Futura', sans-serif;
+    cursor: pointer;
+}
+
+.btnTop{
+    text-align: center;
+    height: 100%;
+    padding: 1rem;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    font-family: 'Futura', sans-serif;
+    cursor: pointer;
+}
+
+.btnTop img {
+    width: 1rem;
+    border: none;
+}
+
+.link:hover, .link:active, .btnTop:hover{
+    background-color: white;
+    color: black;
+}
+
 
 main {
     display: flex;
-    flex: 2;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
 main div {
-    flex: 1;
+    font-size: 3rem;
 }
 
 footer {
-    flex: 1;
+    min-height: 300px;
+    text-align: center;
+    font-size: 2rem;
 }
 
