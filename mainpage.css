@@ -32,7 +32,6 @@ body{
 
 header {
     background-color: white;
-    min-height: 600px;
     height: max-content;
     border: none;
 }
@@ -55,10 +54,10 @@ header {
     width: 100%;
     aspect-ratio: 16/11;
     background-image: url(Imagens/dom-hill-0wMLZNbE8Ac-unsplash.jpg);
-    background-attachment: fixed;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -80,6 +79,7 @@ header {
     font-family: var(--fonte-forte);
     color: white;
     text-shadow: 1px 1px 5px black;
+    border: none;
 }
 
 .navbar{
@@ -105,6 +105,7 @@ header {
     font-family: 'Futura', sans-serif;
     cursor: pointer;
     border: none;
+    transition: .35s;
 }
 
 .btnTop{
@@ -112,10 +113,13 @@ header {
     height: 100%;
     padding: 1rem;
     font-size: 2rem;
+    background-color: white;
     color: white;
     text-decoration: none;
     font-family: 'Futura', sans-serif;
     cursor: pointer;
+    border: none;
+    transition: 0.6s;
 }
 
 .btnTop img {
@@ -123,22 +127,90 @@ header {
     border: none;
 }
 
-.link:hover, .link:active, .btnTop:hover{
+.link:hover, .link:active {
     background-color: white;
     color: black;
 }
 
 
+.btnTop:hover{
+    background-color: gold;
+}
+
+
 main {
     display: flex;
+    flex-direction: column;
     min-height: 100vh;
     justify-content: center;
     align-items: center;
+    border: none;
 }
 
-main div {
-    font-size: 3rem;
+.gridSection {
+    padding: 10px 10px 3.5rem 10px;
+    display: flex;
+    border: none;
+    width: 100%;
+    height: 100vh;
+    border-bottom: 2px solid black;
 }
+
+
+
+#street {
+    background-color: rgb(148, 148, 148);
+    background-image: url(Imagens/wp6793431-old-school-rap-wallpapers.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    border: none;
+}
+
+.gridSection div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: none;
+}
+
+.sectionCard {
+    display: flex;
+    height: 80%;
+    width: 90%;
+    backdrop-filter: blur(16px) saturate(144%);
+    -webkit-backdrop-filter: blur(16px) saturate(144%);
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.sectionBtn {
+    text-align: center;
+    height: auto;
+    width: max-content;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    background-color: #34bfff;
+    box-shadow: 1px 1px 4px rgba(0, 0, 59, 0.55);
+    border: none;
+    color: white;
+    font-family: 'Futura', sans-serif;
+    font-size: 1.5rem;
+    font-stretch: normal;
+    cursor: pointer;
+}
+
+.sectionBtn:active, .sectionBtn:hover {
+    position: relative;
+    top: 1px;
+    left: 1px;
+}
+
 
 footer {
     min-height: 300px;
